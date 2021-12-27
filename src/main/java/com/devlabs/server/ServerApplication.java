@@ -18,10 +18,10 @@ public class ServerApplication {
 	@Bean
 	CommandLineRunner run(ServerRepo serverRepo) {
 		return args -> {
-			serverRepo.save(new Server(null, "192.168.1.160", "Ubuntu Linux", "16 GB", "Personal PC", "http://localhost:8080/server/image/server_up.png", Status.SERVER_UP));
-			serverRepo.save(new Server(null, "192.168.1.58", "Fedora Linus", "16 GB", "Dell Tower", "http://localhost:8080/server/image/server_down.png", Status.SERVER_UP));
-			serverRepo.save(new Server(null, "192.168.1.21", "MS 2008", "32 GB", "Web Server", "http://localhost:8080/server/image/server_up.png", Status.SERVER_UP));
-			serverRepo.save(new Server(null, "192.168.1.14", "Red Hat", "64 GB", "Mail Server", "http://localhost:8080/server/image/server_down.png", Status.SERVER_UP));
+			serverRepo.save(new Server(null, "10.10.106.12", "Ubuntu Linux", "16 GB", "Personal PC", "http://localhost:8081/server/image/server_down.png", Status.SERVER_UP));
+			serverRepo.save(new Server(null, "192.168.1.58", "Fedora Linus", "16 GB", "Dell Tower", "http://localhost:8081/server/image/server_down.png", Status.SERVER_UP));
+			serverRepo.save(new Server(null, "192.168.1.21", "MS 2008", "32 GB", "Web Server", "http://localhost:8081/server/image/server_down.png", Status.SERVER_UP));
+			serverRepo.save(new Server(null, "192.168.1.14", "Red Hat", "64 GB", "Mail Server", "http://localhost:8081/server/image/server_down.png", Status.SERVER_UP));
 		};
 	}
 
